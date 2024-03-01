@@ -1,4 +1,4 @@
-import './Login.css'; // Importing your CSS file
+import './login.css'; // Importing your CSS file
 import React from 'react';
 
 function Login() {

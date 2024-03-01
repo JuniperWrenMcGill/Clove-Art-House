@@ -1,16 +1,19 @@
 import './App.css'; // Importing your CSS file
-import Navbar from './components/Navbar/Navbar'; // Importing the Navbar component
+import Navbar from './components/navbar/navbar'; // Importing the Navbar component
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importing necessary components from react-router-dom
-import AboutUs from './components/AboutUs/AboutUs'; // Importing the AboutMe component
-import Homepage from './components/Homepage/Homepage'; // Importing the Homepage component
-import Footer from './components/Footer/Footer'; // Importing the Footer component
-import Login from './components/Login/Login'; // Importing the Login component
-import LotPage from './components/LotPage/LotPage'; // Importing the LotPage component
-import OwnerDashboard from './components/OwnerDashboard/OwnerDashboard'; // Importing the OwnerDashboard component
-import Sellers from './components/Sellers/Sellers'; // Importing the Sell component
-import Signup from './components/SignUp/SignUp'; // Importing the SignUp component
-import UserDashboard from './components/UserDashboard/UserDashboard'; // Importing the UserDashboard component
-import Buy from './components/Buy/Buy';
+import AboutUs from './components/aboutUs/aboutUs'; // Importing the AboutMe component
+import Homepage from './components/homepage/homepage'; // Importing the Homepage component
+import Footer from './components/footer/footer'; // Importing the Footer component
+import Login from './components/login/login'; // Importing the Login component
+import LotPage from './components/lotPage/lotPage'; // Importing the LotPage component
+import OwnerDashboard from './components/ownerDashboard/ownerDashboard'; // Importing the OwnerDashboard component
+import Sellers from './components/sellers/sellers'; // Importing the Sell component
+import Signup from './components/signUp/signUp'; // Importing the SignUp component
+import UserDashboard from './components/userDashboard/userDashboard'; // Importing the UserDashboard component
+import Buy from './components/buy/buy';
+import Contact from './components/customerSupport/customerSupport';
+
+
 
 function App() {
   return (
@@ -26,6 +29,8 @@ function App() {
         <Route exact path="/Signup" element={<Signup />} /> {/* Route for the Signup page */}
         <Route exact path="/UserDashboard" element={<UserDashboard />} /> {/* Route for the UserDashboard */}
         <Route exact path="/Buy" element={<Buy />} /> {/* Route for the Sell page */}
+        <Route exact path="/Contact" element={<Contact/>} /> {/* Route for the Sell page */}      
+      
         {/* Add more routes as needed */}
         
       </Routes>

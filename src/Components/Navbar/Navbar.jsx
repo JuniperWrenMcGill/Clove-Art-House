@@ -1,4 +1,4 @@
-import './Navbar.css'; // Importing your CSS file
+import './navbar.css'; // Importing your CSS file
 import React from 'react';
 
 function Navbar() {

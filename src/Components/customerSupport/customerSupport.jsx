@@ -1,4 +1,4 @@
-import './CustomerSupport.css'; // Importing your CSS file
+import './customerSupport.css'; // Importing your CSS file
 import React from 'react';
 
 function CustomerSupport() {

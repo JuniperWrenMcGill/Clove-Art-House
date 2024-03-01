@@ -1,4 +1,4 @@
-import './LotPage.css'; // Importing your CSS file
+import './lotPage.css'; // Importing your CSS file
 import React from 'react';
 
 function LotPage() {

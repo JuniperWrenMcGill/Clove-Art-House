@@ -1,4 +1,4 @@
-import './SignUp.css'; // Importing your CSS file
+import './signUp.css'; // Importing your CSS file
 import React from 'react';
 
 function SignUp() {
