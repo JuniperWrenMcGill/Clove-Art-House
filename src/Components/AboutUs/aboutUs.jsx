@@ -1,4 +1,4 @@
-import './AboutUs.css'; // Importing your CSS file
+import './aboutUs.css'; // Importing your CSS file
 import React from 'react';
 
 function AboutUs() {

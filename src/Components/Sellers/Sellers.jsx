@@ -1,4 +1,4 @@
-import './Sellers.css'; // Importing your CSS file
+import './sellers.css'; // Importing your CSS file
 import React from 'react';
 
 function Sellers() {

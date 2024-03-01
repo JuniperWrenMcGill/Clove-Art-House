@@ -1,4 +1,4 @@
-import './Impact.css'; // Importing your CSS file
+import './impact.css'; // Importing your CSS file
 import React from 'react';
 
 function Impact() {

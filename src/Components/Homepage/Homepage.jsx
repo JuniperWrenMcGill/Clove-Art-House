@@ -1,4 +1,4 @@
-import './Homepage.css'; // Importing your CSS file
+import './homepage.css'; // Importing your CSS file
 import React from 'react';
 
 function Homepage() {

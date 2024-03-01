@@ -1,4 +1,4 @@
-import './UserDashboard.css'; // Importing your CSS file
+import './userDashboard.css'; // Importing your CSS file
 import React from 'react';
 
 function UserDashboard() {

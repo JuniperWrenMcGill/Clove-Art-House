@@ -1,4 +1,4 @@
-import './OwnerDashboard.css'; // Importing your CSS file
+import './ownerDashboard.css'; // Importing your CSS file
 import React from 'react';
 
 function OwnerDashboard() {
