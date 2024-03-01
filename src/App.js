@@ -2,7 +2,7 @@ import './App.css'; // Importing your CSS file
 import Navbar from './components/Navbar/Navbar'; // Importing the Navbar component
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importing necessary components from react-router-dom
 import AboutUs from './components/AboutUs/AboutUs'; // Importing the AboutMe component
-import Homepage from './components/Homepage/Homepage'; // Importing the Homepage component
+import Homepage from './components2/Homepage/Homepage'; // Importing the Homepage component
 import Footer from './components/Footer/Footer'; // Importing the Footer component
 import Login from './components/Login/Login'; // Importing the Login component
 import LotPage from './components/LotPage/LotPage'; // Importing the LotPage component
