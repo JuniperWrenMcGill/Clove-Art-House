@@ -10,6 +10,8 @@ function Navbar() {
         <li><a href="/buy">Buy</a></li>
         <li><a href="/sell">Sell</a></li>
         <li><a href="/impact">Impact</a></li>
+        <li><a href="/account">Account</a></li>
+
 
       </ul>
     </nav>

@@ -8,6 +8,7 @@ import Buy from './components/buy/buy';
 import About from './components/about/about';
 import Sellers from './components/sellers/sellers';
 import Impact from './components/impact/impact';
+import Account from './components/account/account';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/about" element={<About/>} />
             <Route exact path="/sell" element={<Sellers/>} />
             <Route exact path="/impact" element={<Impact/>} />
+            <Route exact path="/account" element={<Account/>} />
 
             {/* Add more routes for other pages */}
           </Routes>
