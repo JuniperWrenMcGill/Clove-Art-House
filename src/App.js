@@ -10,6 +10,8 @@ import Sellers from './components/sellers/sellers';
 import Impact from './components/impact/impact';
 import Account from './components/account/account';
 
+import Footer from './components/footer/footer';
+
 function App() {
   return (
     <Router>
@@ -26,6 +28,7 @@ function App() {
 
             {/* Add more routes for other pages */}
           </Routes>
+          <Footer />
         </div>
       </div>
     </Router>
