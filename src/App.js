@@ -4,6 +4,7 @@ import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing the Routes component
 
 import Home from './components/home/home';
+import Buy from './components/buy/buy';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="content">
           <Routes> {/* Wrap your Route components with Routes */}
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/buy" element={<Buy/>} />
             {/* Add more routes for other pages */}
           </Routes>
         </div>
