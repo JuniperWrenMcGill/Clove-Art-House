@@ -7,6 +7,7 @@ import Home from './components/home/home';
 import Buy from './components/buy/buy';
 import About from './components/about/about';
 import Sellers from './components/sellers/sellers';
+import Impact from './components/impact/impact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/buy" element={<Buy/>} />
             <Route exact path="/about" element={<About/>} />
             <Route exact path="/sell" element={<Sellers/>} />
+            <Route exact path="/impact" element={<Impact/>} />
 
             {/* Add more routes for other pages */}
           </Routes>

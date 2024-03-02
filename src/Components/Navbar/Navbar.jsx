@@ -9,6 +9,8 @@ function Navbar() {
         <li><a href="/about">About</a></li>
         <li><a href="/buy">Buy</a></li>
         <li><a href="/sell">Sell</a></li>
+        <li><a href="/impact">Impact</a></li>
+
       </ul>
     </nav>
   );
