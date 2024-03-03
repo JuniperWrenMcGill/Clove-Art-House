@@ -1,16 +1,81 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .container p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+.home-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-image: url(../../../public/assets/img/home.jpg); 
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: 80% 50%; /* Center the background image */
+  color: white; /* Set font color to white */
+  height: 100vh; /*This is what sets the size of the whole page - 
+  we currently need to scroll because it is set to 100 (as it should be) and the navbar and footer styled have not been properly set.
+  When those styles are set we can come back and adjust card stylings as needed to a cohesive look */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: wrap;
+  gap: 20px; /* Space between cards */
+  margin: 20px; 
+}
+
+.left-card {
+  width: 862px;
+  height: 530px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(8, 22, 21, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Padding to create space between text and card edges */
+  margin-right: 10px;
+
+}
+
+.left-card h1 {
+  font-size: 35px; 
+}
+
+.left-card h2 {
+  font-size: 20px; 
+}
+
+
+.left-card p{
+  font-size: 20px; 
+
+}
+
+.right-card {
+  width: 360px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(8, 22, 21, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Padding to create space between text and card edges */
+  margin-left: 10px;
+}
+
+.right-card h3 {
+  font-size: 30px; 
+}
+
+.button {
+  width: 263px;
+  height: 73px;
+  flex-shrink: 0;
+  background-color: #D9D9D9; 
+  border: none; /* Remove button border */
+  color: #bf5e22e1  ; /* Set button text color*/
+  font-size: 25px; /* Set button font size */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d9d9d1; /* Example color on hover */
+}
