@@ -3,11 +3,13 @@ import './about.css'; // Import the CSS file
 
 function About() {
   return (
-    <div className="about-container">
-      <h1 className="about-title">About Us</h1>
-      <p className="about-text">Welcome to our company! Here's a brief overview of who we are and what we do.</p>
-      <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat vel nunc ac pretium. Ut tristique turpis quis neque consequat, nec egestas enim commodo. Nulla facilisi. Vivamus sit amet purus libero. Duis lacinia, libero et gravida finibus, nisi purus tempor velit, at aliquam mi libero sit amet orci. Nam vestibulum, magna vitae convallis malesuada, sapien neque tincidunt mi, vel gravida arcu velit in nisi. Mauris id dolor nec nibh tristique lacinia. Donec venenatis sit amet elit vel consectetur.</p>
-      <p className="about-text">Phasellus fermentum nunc eget velit suscipit rhoncus. Integer accumsan congue sem, vel aliquam justo sodales ac. Donec non diam risus. Nullam a tincidunt libero, eget ullamcorper lacus. Vivamus auctor urna id ultrices ullamcorper. Nullam laoreet vitae magna nec bibendum. Curabitur congue massa at mauris fermentum, et fermentum ex vehicula. Vestibulum id felis eu eros volutpat feugiat. Fusce vitae gravida elit.</p>
+    <div className="card-container">
+      <h1 className="about-title">Welcome to [Art Auction Website Name]</h1>
+      <p className="about-text">At [Art Auction Website Name], we're passionate about art and making a difference. Our platform brings together local artists and collectors, to support a worthy cause while celebrating creativity from around the world.</p>
+      <h2>Explore, Bid, Make a Difference</h2>
+      <p className="about-text">Browse our curated collection of stunning artworks from emerging artists spanning various styles, mediums, and genres. From captivating paintings to exquisite sculptures, there's something for every taste and preference.Participate in our live auctions to bid on your favorite pieces and secure a masterpiece to adorn your home or office. With each bid, you're not just acquiring art—you're also making a meaningful contribution to the cause.</p>
+      <h2>Join Our Community</h2>
+      <p>Whether you're an art enthusiast, a seasoned collector, or someone looking to make a difference, we invite you to join our vibrant community. Connect with fellow art lovers, discover new talents, and be part of something truly special.Start your journey with [Art Auction Website Name] today and experience the joy of art while making a difference in the world.</p>
     </div>
   );
 }
