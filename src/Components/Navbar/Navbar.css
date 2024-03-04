@@ -1,7 +1,7 @@
 .navbar {
-    background-color: #333;
+    background: rgba(8, 22, 21, 0.94);
     color: #fff;
-    padding: 10px;
+    padding: 30px;
   }
   
   .navbar ul {
@@ -13,6 +13,9 @@
   .navbar ul li {
     display: inline;
     margin-right: 10px;
+    width: 100px;
+    margin-right: 100px;
+    font-size: 30px;
   }
   
   .navbar ul li a {
