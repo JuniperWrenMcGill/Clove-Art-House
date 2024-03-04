@@ -1,50 +1,73 @@
-.contact-page {
-    padding: 20px;
-  }
-  
-  .contact-page h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
+.impact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../../public/assets/img/home.jpg); 
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+  color: white;
+  height: 100vh;
+}
+
+/* Left card styles */
+.impact-left-card {
+  width: 862px;
+  height: 530px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(8, 22, 21, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.impact-title{
+  font-size: 35px; 
+}
+
+.impact-subtitle{
+  font-size: 30px; 
+}
+
+.impact-text{ 
+  font-size: 20px; 
+}
+
+.impact-text-right{
+  font-size: 20px; 
+}
+
+/* Right card styles */
+.impact-right-card {
+  width: 360px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(8, 22, 21, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.impact-button {
+  width: 263px;
+  height: 73px;
+  flex-shrink: 0;
+  background-color: #D9D9D9; 
+  border: none;
+  color: #bf5e22e1;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.impact-button:hover {
+  background-color: #d9d9d1;
+}
