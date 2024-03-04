@@ -2,19 +2,17 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing the Routes component
-
 import io from 'socket.io-client'
 import {useEffect} from "react";
-const socket = io.connect("http://localhost:3001")
-
 import Home from './components/home/home';
 import Buy from './components/buy/buy';
 import About from './components/about/about';
 import Sellers from './components/sellers/sellers';
 import Impact from './components/impact/impact';
 import Account from './components/account/account';
-
 import Footer from './components/footer/footer';
+
+const socket = io.connect("http://localhost:3001")
 
 function App() {
   return (
