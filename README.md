@@ -70,6 +70,6 @@ Insert Picture here
 
 ## 8. Credits
 
-1. 
-2. 
+1. x
+2. x
 3. https://github.com/JosephVz
