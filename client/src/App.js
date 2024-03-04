@@ -11,7 +11,6 @@ import Sellers from './components/sellers/sellers';
 import Impact from './components/impact/impact';
 import Account from './components/account/account';
 import Footer from './components/footer/footer';
-import Owner from './components/owneraccount/owneraccount';
 
 const socket = io.connect("http://localhost:3001")
 
@@ -28,8 +27,8 @@ function App() {
             <Route exact path="/sell" element={<Sellers/>} />
             <Route exact path="/impact" element={<Impact/>} />
             <Route exact path="/account" element={<Account/>} />
-            <Route exact path="/owner-account" element={<Owner/>} />
-
+            {/* <Route path='/signup' element={<Signup />}></Route>
+            <Route path='/' element={<Login />}></Route> */}
 
             {/* Add more routes for other pages */}
           </Routes>
