@@ -10,9 +10,17 @@
     width: 600px; /* Adjust width as needed */
   }
   
-  .login-form,
+  .login-form {
+    background: rgba(229, 137, 76, 0.94);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px; /* Adjust width as needed */
+  }
+
   .signup-form {
-    background-color: #f9f9f9;
+    background: rgba(229, 137, 76, 0.74);
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
