@@ -3,18 +3,10 @@ const app = express();
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
-const app = express();
 app.use(express.json())
 app.use(cors());
-
-// const db= mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "",
-//     database: "signup"
-// })
 
 // app.post('/signup', (req, res) => {
 //     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
@@ -45,7 +37,7 @@ app.use(cors());
 // })
 // })
 
-app.listen(3001, ()=> {
+app.listen(8080, ()=> {
     console.log("listening");
 })
 
