@@ -3,7 +3,7 @@ import './buy.css'; // Import CSS file for styling
 import io from 'socket.io-client'
 const socket = io.connect("http://localhost:3001")
 
-function App() {
+function Auction() {
 
   //useState lets us update the price once received by backend
   const [price, setPrice] = useState();
@@ -33,7 +33,7 @@ function App() {
       <div className="product-details">
         <h2 className="product-title">{title}</h2>
         <p className="product-description">{description}</p>
-        <img src={imageURL} alt="Product" className="product-image" />
+        <div className="product-image" />
       </div>
       <div className="bid-section">
         <h3 className="bid-title">Latest Bid: ${price}</h3>
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default Auction;
