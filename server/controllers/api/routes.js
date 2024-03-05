@@ -9,15 +9,15 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.get('/login', (req, res) => {
+router.get('/account', (req, res) => {
   // if (req.session.logged_in) {
   //     res.redirect('/');
   //     return;
   // }
-  res.render('login');
+  res.render('Home');
 });
 
-router.get('/signup', (req, res) => {
+router.get('/account', (req, res) => {
   // if (req.session.logged_in) {
   //     res.redirect('/');
   //     return;
