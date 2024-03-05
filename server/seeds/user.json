@@ -1,0 +1,30 @@
+[
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "address": "123 Main St, City, Country",
+      "phone": "123-456-7890",
+      "createdAt": "2024-03-04T10:00:00Z",
+      "updatedAt": "2024-03-04T10:00:00Z"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "address": "456 Elm St, City, Country",
+      "phone": "987-654-3210",
+      "createdAt": "2024-03-04T11:00:00Z",
+      "updatedAt": "2024-03-04T11:00:00Z"
+    },
+    {
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "password": "password789",
+      "address": "789 Oak St, City, Country",
+      "phone": "111-222-3333",
+      "createdAt": "2024-03-04T12:00:00Z",
+      "updatedAt": "2024-03-04T12:00:00Z"
+    }
+  ]
+  

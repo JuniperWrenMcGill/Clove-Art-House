@@ -1,0 +1,24 @@
+[
+    {
+      "lotId": 1,
+      "lotDescription": "Beautiful Artwork",
+      "startingPrice": 100,
+      "currentPrice": 100,
+      "durationOfListing": 604800 
+    },
+    {
+      "lotId": 2,
+      "lotDescription": "Antique Painting",
+      "startingPrice": 200,
+      "currentPrice": 200,
+      "durationOfListing": 604800 
+    },
+    {
+      "lotId": 3,
+      "lotDescription": "Vintage Oil Painting",
+      "startingPrice": 150,
+      "currentPrice": 150,
+      "durationOfListing": 604800 
+    }
+  ]
+  
