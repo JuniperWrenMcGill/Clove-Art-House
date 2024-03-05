@@ -22,10 +22,11 @@ const io = new Server(server, {
 
 io.on("connection", (socket) => {
     console.log(`User Connected, id is ${socket.id}`);
-    socket.on("send_message", (data) => {
-        console.log(data);
-        socket.broadcast.emit("receive_message", data);
-    })
+    socket.emit("price", 450); //Price will come from Db
+    socket.on("newAcceptedBid", (data) => {
+        //Update Db with the new bid "(data)", and emit to other browsers.
+        socket.broadcast.emit("price", (data));
+    });
 })
 
 server.listen(PORT, () => {
