@@ -19,14 +19,14 @@ function Auction() {
 
   //simple logic to check if bid amt is greater than price.
   const checkBid = () => {
-    const bid = document.getElementById("bid").value;
+    let bid = +document.getElementById("bid").value;
+    console.log(bid);
     if (bid <= price) {
       alert("Please enter an amount greater than the current price!");
     } else if (bid > price) {
       setPrice(bid);
       socket.emit("newAcceptedBid", bid); //Broadcast the accepted bid so that server can show others in room and update Db.
     }
-
   }
   return (
     <div className="App">
@@ -37,7 +37,7 @@ function Auction() {
       </div>
       <div className="bid-section">
         <h3 className="bid-title">Latest Bid: ${price}</h3>
-        <input id="bid" value={bid} placeholder="Place your bid!" className="bid-input" />
+        <input id="bid" placeholder="Place your bid!" className="bid-input" />
         <button onClick={checkBid} className="bid-submit">Submit</button>
       </div>
     </div>

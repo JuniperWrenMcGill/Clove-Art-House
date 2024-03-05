@@ -60,20 +60,37 @@ import { Link } from 'react-router-dom'
 // export default Account;
 
 function Account() {
+
+  const signUpForm = async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    
+    const response = await fetch('/api/users/', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    })
+    if (response.ok) {
+      alert(response);
+    }
+
+    // Handle sign up form submission
+};
   return (
     <div>
       <div>
         <form action="">
           <div className='mb-3'>
-          <label htmlFor="email">Email</label>
-          <input type="email" placeholder="Enter Email"/>
+          <label  htmlFor="email">Email</label>
+          <input id="email" type="email" placeholder="Enter Email"/>
         </div>
           <div className='md-3'>
-            <label htmlFor="password">Password</label>
-            <input type="password" placeholder="Enter Password"/>
+            <label  htmlFor="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password"/>
           </div>
           <button className="btn btn-success">Log in</button>
-          <button className='btn btn-default border'>Create Account</button>
+          <button onClick={signUpForm} className='btn btn-default border'>Create Account</button>
         </form>
       </div>
     </div>
