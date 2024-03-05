@@ -8,12 +8,6 @@ const mysql = require('mysql2');
 app.use(express.json())
 app.use(cors());
 
-const db= mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "signup"
-})
 
 // app.post('/signup', (req, res) => {
 //     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
