@@ -9,8 +9,8 @@ function Auction() {
   const [price, setPrice] = useState();
   // useState to manage bid, description, title, and image
   const [bid, setBid] = useState("");
-  const [description, setDescription] = useState("test");
-  const [title, setTitle] = useState("test");
+  const [description, setDescription] = useState("Step into the captivating world of an exquisite oil painting. The artist's use of yellows infuses the scene with a luminous quality that captivates the eye. This remarkable artwork promises to be a cherished addition to any collection, offering a timeless reminder of the beauty found in moments of quiet reflection");
+  const [title, setTitle] = useState("The Straw Hat by Nikos Lytras");
   const [imageURL, setImageURL] = useState("");
   //gets price from server
   socket.on("price", (data) => {
@@ -29,17 +29,19 @@ function Auction() {
     }
   }
   return (
+    <div className="buy-page">
     <div className="App">
-      <div className="product-details">
+      <div className="product-details-card">
         <h2 className="product-title">{title}</h2>
         <p className="product-description">{description}</p>
-        <div className="product-image" />
+        <div className="product-image"/>
       </div>
       <div className="bid-section">
         <h3 className="bid-title">Latest Bid: ${price}</h3>
         <input id="bid" placeholder="Place your bid!" className="bid-input" />
         <button onClick={checkBid} className="bid-submit">Submit</button>
       </div>
+    </div>
     </div>
   );
 }
