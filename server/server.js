@@ -3,9 +3,8 @@ const app = express();
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
-const app = express();
 app.use(express.json())
 app.use(cors());
 
@@ -45,7 +44,7 @@ const db= mysql.createConnection({
 // })
 // })
 
-app.listen(3001, ()=> {
+app.listen(8080, ()=> {
     console.log("listening");
 })
 
