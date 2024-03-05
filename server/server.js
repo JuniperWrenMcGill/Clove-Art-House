@@ -4,9 +4,12 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const mysql = require('mysql2');
+// const routes = require('./routes');
+const sequelize = require('./config/connection');
 
 app.use(express.json())
 app.use(cors());
+// app.use(routes);
 
 // app.post('/signup', (req, res) => {
 //     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
@@ -37,9 +40,6 @@ app.use(cors());
 // })
 // })
 
-app.listen(8080, ()=> {
-    console.log("listening");
-})
 
 const PORT = process.env.PORT || 3001;
 
@@ -66,3 +66,7 @@ io.on("connection", (socket) => {
 server.listen(PORT, () => {
     console.log("Server running");
 })
+
+sequelize.sync({ force: false }).then(() => {
+    app.listen(8080, () => console.log('Now listening'));
+  });
