@@ -9,8 +9,8 @@ function Auction() {
   const [price, setPrice] = useState();
   // useState to manage bid, description, title, and image
   const [bid, setBid] = useState("");
-  const [description, setDescription] = useState("test");
-  const [title, setTitle] = useState("test");
+  const [description, setDescription] = useState("Step into the captivating world of an exquisite oil painting that exudes warmth and serenity. At the heart of the canvas stands a solitary figure, a gentleman adorned in a distinguished hat, lost in contemplation. The artist's masterful use of yellows, ranging from soft ochres to vibrant golds, infuses the scene with a luminous quality that captivates the eye. As light and shadow dance across the canvas, the depth and realism of the composition are enhanced, drawing the viewer deeper into the tranquil atmosphere. This piece invites you to immerse yourself in its rich hues and ponder the mysteries hidden within its depths. This remarkable artwork promises to be a cherished addition to any collection, offering a timeless reminder of the beauty found in moments of quiet reflection");
+  const [title, setTitle] = useState("The Straw Hat by Nikos Lytras");
   const [imageURL, setImageURL] = useState("");
   //gets price from server
   socket.on("price", (data) => {
