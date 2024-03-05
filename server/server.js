@@ -4,13 +4,27 @@ const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const mysql = require('mysql2');
-// const routes = require('./routes');
+const routes = require('./routes');
 const sequelize = require('./config/connection');
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-app.use(express.json())
+
 app.use(cors());
-// app.use(routes);
+app.use(routes);
+app.use(express.json());
 
+const sess = {
+    secret: 'Super secret secret',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize,
+    }),
+};
+
+app.use(session(sess));
 // app.post('/signup', (req, res) => {
 //     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
 //     const values = [
@@ -64,9 +78,9 @@ io.on("connection", (socket) => {
 })
 
 server.listen(PORT, () => {
-    console.log("Server running");
+    console.log(`Server running pn port ${PORT}`);
 })
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(8080, () => console.log('Now listening'));
-  });
+    app.listen(8080, () => console.log('Sequelize listening on 8080'));
+});
