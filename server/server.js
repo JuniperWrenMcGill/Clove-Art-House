@@ -8,13 +8,10 @@ const routes = require('./routes');
 const sequelize = require('./config/connection');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+const path = require('path');
 
 app.use(cors());
 app.use(express.json());
-
-
-
 
 const sess = {
     secret: 'Super secret secret',
@@ -79,6 +76,14 @@ io.on("connection", (socket) => {
     });
 })
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/dist')));
+
+  }
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+  });
+  
 server.listen(PORT, () => {
     console.log(`Server running pn port ${PORT}`);
 })
