@@ -1,29 +1,43 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// Define Lot model
-const Lots = sequelize.define('Lot', {
-  lotId: {
-    type: Sequelize.INTEGER,
-    primaryKey: true,
-    autoIncrement: true
-  },
-  lotPhotos: {
-    type: Sequelize.ARRAY(Sequelize.STRING) // Store Cloudinary public IDs as strings in an array
-  },
-  lotDescription: {
-    type: Sequelize.TEXT
-  },
-  startingPrice: {
-    type: Sequelize.FLOAT
-  },
-  currentPrice: {
-    type: Sequelize.FLOAT
-  },
-  durationOfListing: {
-    type: Sequelize.INTEGER // Duration in seconds
-  }
-});
+class Lots extends Model {}
 
-// Export the Lot model
+Lots.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    photoUrl: {
+      type: DataTypes.STRING,
+    },
+    description: {
+      type: DataTypes.TEXT("long"),
+      allowNull: false,
+    },
+    startingPrice: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
+    currentPrice: {
+      type: DataTypes.FLOAT,
+    },
+    endDate: {
+      type: DataTypes.DATE,
+      allowNull: false
+    }
+  },
+
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'lots',
+  }
+);
+
 module.exports = Lots;
