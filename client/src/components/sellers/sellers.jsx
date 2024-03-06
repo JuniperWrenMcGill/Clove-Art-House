@@ -28,7 +28,7 @@ function Sellers() {
       <div className="sellers-contact-card">
         <h1 className="sellers-title">Do you want to sell your art?</h1>
         <p className="sellers-text">We're dedicated to showcasing emerging artists. Contact us through the form below. Just provide your name, email, and portfolio link. We'll review your work promptly.</p>
-        <ContactForm className="sellers-contact-form" />
+        <div className="sellers-contact-form"><ContactForm /></div>
       </div>
     </div>
   );

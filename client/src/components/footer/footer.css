@@ -1,20 +1,25 @@
 .footer {
-    background: rgba(8, 22, 21, 0.94);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
+  position: fixed; /* Fixed position to stay at the bottom */
+  left: 0;
+  bottom: 0; /* Aligns the footer at the bottom of the screen */
+  width: 100%; /* Ensures the footer extends across the full width of the viewport */
+  background: rgba(8, 22, 21, 0.918);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding does not increase the total width */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 17px;
+}
+
+/* New style for the Owner Login link */
+.owner-login-link {
+  color: #fff;
+}
+
+.owner-login-link:hover {
+  color: #bf5e22e1;
+}

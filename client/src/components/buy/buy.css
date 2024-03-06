@@ -81,6 +81,7 @@
   color: #d9d9d1 ; /* Set button text color*/
   font-size: 25px; /* Set button font size */
   cursor: pointer;
+  margin-bottom: 100px;
 }
 
 .bid-submit:hover{

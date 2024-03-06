@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>
-        <Link to="/owner-account">Owner Login</Link> || @ 2024 Temp name. All rights reserved.
+        <Link to="/owner-account" className="owner-login-link" >Owner Login</Link> || @ 2024 Clove Art House || All rights reserved.
       </p>
     </footer>
   );
