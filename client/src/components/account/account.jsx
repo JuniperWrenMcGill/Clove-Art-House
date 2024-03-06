@@ -65,16 +65,19 @@ function Account() {
     e.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    
+    alert(
+   `Email: ${email}
+    Password: ${password}`);
     const response = await fetch('/api/users/', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' }
+  
     })
     if (response.ok) {
       alert(response.status);
     } else {
-      alert(response.status);
+      alert(response.statusText);
     }
 
     // Handle sign up form submission

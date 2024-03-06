@@ -11,8 +11,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 
 app.use(cors());
-app.use(routes);
 app.use(express.json());
+
+
+
 
 const sess = {
     secret: 'Super secret secret',
@@ -23,8 +25,8 @@ const sess = {
         db: sequelize,
     }),
 };
-
 app.use(session(sess));
+app.use(routes);
 // app.post('/signup', (req, res) => {
 //     const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
 //     const values = [
