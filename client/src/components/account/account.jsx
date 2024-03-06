@@ -60,15 +60,29 @@ import { Link } from 'react-router-dom'
 // export default Account;
 
 function Account() {
+  const logInForm = async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const response = await fetch('/api/users/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' }
+  
+    })
+    if (response.ok) {
+      // alert(response.status);
+    } else {
+      // alert(response.statusText);
+    }
+  }
 
   const signUpForm = async (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    alert(
-   `Email: ${email}
-    Password: ${password}`);
-    const response = await fetch('/api/users/', {
+   
+    const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' }
@@ -94,7 +108,7 @@ function Account() {
             <label  htmlFor="password">Password</label>
             <input id="password" type="password" placeholder="Enter Password"/>
           </div>
-          <button className="btn btn-success">Log in</button>
+          <button onClick={logInForm} className="btn btn-success">Log in</button>
           <button onClick={signUpForm} className='btn btn-default border'>Create Account</button>
         </form>
       </div>
