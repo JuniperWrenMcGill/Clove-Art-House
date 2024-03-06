@@ -1,33 +1,32 @@
 .navbar {
   background: rgba(8, 22, 21, 0.94);
   color: #fff;
-  padding: 20px 30px 20px 20px; /* Decrease top and bottom padding */
+  padding: 20px 30px 20px 20px; /* Adjust left padding for space */
 }
 
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox for better alignment */
-  justify-content: space-between; /* Equal spacing between list items */
-  align-items: center; /* Vertically center items */
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul li {
-  margin-right: 45px;
-  margin-left: 45px;
+  margin-right: 60px;
+  margin-left:60px;
 }
 
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 22px; /* Decrease font size for better fit */
+  font-size: 22px;
 }
 
 .navbar ul li.logo {
   color: #fff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 33px;
   font-weight: bold;
 }
