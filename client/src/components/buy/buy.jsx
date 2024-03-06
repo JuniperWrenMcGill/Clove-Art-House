@@ -12,6 +12,13 @@ function Auction() {
   const [description, setDescription] = useState("Step into the captivating world of an exquisite oil painting. The artist's use of yellows infuses the scene with a luminous quality that captivates the eye. This remarkable artwork promises to be a cherished addition to any collection, offering a timeless reminder of the beauty found in moments of quiet reflection");
   const [title, setTitle] = useState("The Straw Hat by Nikos Lytras");
   const [imageURL, setImageURL] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track user's login status
+
+  useEffect(() => {
+  setIsLoggedIn();
+  }, []);
+
+  
   //gets price from server
   socket.on("price", (data) => {
     setPrice(data);
@@ -37,10 +44,15 @@ function Auction() {
         <div className="product-image"/>
       </div>
       <div className="bid-section">
-        <h3 className="bid-title">Latest Bid: ${price}</h3>
-        <input id="bid" placeholder="Place your bid!" className="bid-input" />
-        <button onClick={checkBid} className="bid-submit">Submit</button>
-      </div>
+          <h3 className="bid-title">Latest Bid: ${price}</h3>
+          {/* Render bid input and submit button only if user is logged in */}
+          {isLoggedIn && (
+            <>
+              <input id="bid" placeholder="Place your bid!" className="bid-input" />
+              <button onClick={checkBid} className="bid-submit">Submit</button>
+            </>
+          )}
+        </div>
     </div>
     </div>
   );
