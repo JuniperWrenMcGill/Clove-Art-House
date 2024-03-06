@@ -5,17 +5,18 @@ const { User } = require('../../models');
 
 // // CREATE a user
 router.post('/', async (req, res) => {
-    res.json("done");
-    // try {
-    //   const userData = await User.create(req.body);
-    //   req.session.save(() => {
-    //     req.session.user_id = userData.id;
-    //     req.session.logged_in = true;
-    //     res.status(200).json(userData);
-    //   });
-    // } catch (err) {
-    //   res.status(400).json(err);
-    // }
+
+  //   try {
+  //     const userData = await User.create(req.body);
+  //     req.session.save(() => {
+  //       req.session.user_id = userData.id;
+  //       req.session.logged_in = true;
+  //       res.status(200).json(userData);
+  //     });
+  //   } catch (err) {
+  //     res.status(400).json(err);
+  //   }
+
   });
 
 // // DELETE a trip
