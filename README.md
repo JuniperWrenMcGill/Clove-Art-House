@@ -4,7 +4,7 @@
 ![Art Auction Site](./client/public/assets/img/final.png)
 
 ## Table of Contents
-1. [Technologies Used](#technologies-used)
+1. [Features](#features)
 2. [Installation & Usage](#installation-and-usage)
 3. [Collaborators](#collaborators)
 
