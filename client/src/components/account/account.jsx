@@ -60,6 +60,8 @@ import { Link } from 'react-router-dom'
 // export default Account;
 
 function Account() {
+  const history = useHistory();
+
   const logInForm = async (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
@@ -71,9 +73,11 @@ function Account() {
   
     })
     if (response.ok) {
-      // alert(response.status);
+       // Redirect to the buy page upon successful login
+      history.push('/buy');
     } else {
-      // alert(response.statusText);
+      // Handle login failure
+      console.error('Login failed');
     }
   }
 
