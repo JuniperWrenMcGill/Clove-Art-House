@@ -51,6 +51,10 @@ function Auction() {
               <input id="bid" placeholder="Place your bid!" className="bid-input" />
               <button onClick={checkBid} className="bid-submit">Submit</button>
             </>
+
+          )}
+          {!isLoggedIn && (
+            <p>You are logged out. Please log in to place a bid.</p>
           )}
         </div>
     </div>

@@ -60,7 +60,7 @@ import { Link } from 'react-router-dom'
 // export default Account;
 
 function Account() {
-  const history = useHistory();
+  // const history = useHistory();
 
   const logInForm = async (e) => {
     e.preventDefault();
@@ -74,7 +74,7 @@ function Account() {
     })
     if (response.ok) {
        // Redirect to the buy page upon successful login
-      history.push('/buy');
+      // history.push('/buy');
     } else {
       // Handle login failure
       console.error('Login failed');
