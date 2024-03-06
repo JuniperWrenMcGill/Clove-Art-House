@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 90vh; /* Full viewport height */
   background-image: url('../../../public/assets/img/contact.jpg'); /* Background image */
   background-size: cover; /* Ensure image covers container */
   background-position: center; /* Center image */
@@ -12,7 +12,7 @@
 /* Card container styling */
 .sellers-contact-card{
   width: 1300px; 
-  height: 800px; 
+  height: 600px; 
   flex-shrink: 0; /* Prevent container from shrinking */
   border-radius: 16px; /* Rounded corners */
   background: rgba(8, 22, 21, 0.94); /* Semi-transparent background */
@@ -22,6 +22,7 @@
   align-items: center; /* Center child elements horizontally */
   padding: 30px; /* Add padding inside container */
   color: white; /* Text color */
+  margin-bottom:60px;
 }
 
 /* Title styling */
@@ -33,19 +34,20 @@
 
 /* Text content styling */
 .sellers-text {
-  font-size: 25px; /* Font size */
+  font-size: 22px; /* Font size */
   line-height: 1.6; /* Spacing between lines */
-  margin-bottom: 40px; /* Space below paragraphs */
+  margin-bottom: 10px; /* Space below paragraphs */
 }
 
 .sellers-contact-form {
-  width: 200%; /* Make the form full width */
+  width: 300%; /* Make the form full width */
   max-width: 1000px; /* Limit the maximum width */
   margin: 0px;
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: rgba(8, 22, 21, 0);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
 
@@ -55,17 +57,18 @@
   max-width: 600px; /* Optionally, set a maximum width for the form group */
 }
 
-  
-
-
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 300%;
-  padding: 10px;
+  width: 100%; /* Adjusted to ensure they fit within their parent container */
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and borders are included in the total width and height */
+  display: block; /* Ensures elements are block-level, aiding in centering */
+  margin: 0 auto; /* Centers the elements within their parent container */
 }
+
 
 textarea {
   resize: vertical;
@@ -73,15 +76,18 @@ textarea {
 
 button[type="submit"] {
   width: 263px;
-  height: 73px;
+  height: 40px;
   flex-shrink: 0;
-  background-color: #D9D9D9; 
-  border: none; /* Remove button border */
-  color: #bf5e22e1  ; /* Set button text color*/
-  font-size: 25px; /* Set button font size */
+  background-color: #D9D9D9;
+  border: none; 
+  color: #bf5e22e1; 
+  font-size: 15px; 
   cursor: pointer;
+
+  display: block; /* Make the button a block-level element */
+  margin: 0 auto; /* Auto margins on both sides to center the button horizontally */
 }
 
 button[type="submit"]:hover {
-  background-color: #d9d9d1; /* Example color on hover */
+  background-color: #d9d9d1; 
 }
