@@ -6,7 +6,7 @@
   background-repeat: no-repeat; /* Prevent background image from repeating */
   background-position: 80% 50%; /* Center the background image */
   color: white; /* Set font color to white */
-  height: 100vh; /*This is what sets the size of the whole page - 
+  height: 90vh; /*This is what sets the size of the whole page - 
   we currently need to scroll because it is set to 100 (as it should be) and the navbar and footer styled have not been properly set.
   When those styles are set we can come back and adjust card stylings as needed to a cohesive look */
 }
