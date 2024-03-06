@@ -3,7 +3,6 @@ import './account.css'; // Import the CSS file
 import { Link } from 'react-router-dom'
 
 function Account() {
-  // const history = useHistory();
 
   const logInForm = async (e) => {
     e.preventDefault();
@@ -17,9 +16,11 @@ function Account() {
     })
     if (response.ok) {
        // Redirect to the buy page upon successful login
-      // history.push('/buy');
+       alert('Login successful! You will now be redirected to the buy page.');
+
     } else {
       // Handle login failure
+      alert('Login failed. Please check your email and password.');
       console.error('Login failed');
     }
   }
