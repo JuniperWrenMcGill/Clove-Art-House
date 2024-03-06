@@ -8,12 +8,10 @@ function Navbar() {
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/buy">Buy</a></li>
-        <li>Temp Logo</li>
+        <li className="logo">Clove Art House</li> {/* Added class for styling */}
         <li><a href="/sell">Sell</a></li>
         <li><a href="/impact">Impact</a></li>
         <li><a href="/account">Account</a></li>
-
-
       </ul>
     </nav>
   );
