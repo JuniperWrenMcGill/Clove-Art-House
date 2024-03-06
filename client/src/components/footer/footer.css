@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0; /* Aligns the footer at the bottom of the screen */
   width: 100%; /* Ensures the footer extends across the full width of the viewport */
-  background: rgba(8, 22, 21, 0.94);
+  background: rgba(8, 22, 21, 0.918);
   color: #fff;
   padding: 20px 0;
   text-align: center;

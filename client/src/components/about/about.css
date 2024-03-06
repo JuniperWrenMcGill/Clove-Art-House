@@ -3,16 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 84vh; /* Full viewport height */
   background-image: url('../../../public/assets/img/whitebackground.jpg'); /* Background image */
   background-size: cover; /* Ensure image covers container */
   background-position: center; /* Center image */
+  margin-bottom: 50px;
 }
 
 /* Card container styling */
 .about-card-container {
   width: 1300px; 
-  height: 800px; 
+  height: 600px; 
   flex-shrink: 0; /* Prevent container from shrinking */
   border-radius: 16px; /* Rounded corners */
   background: rgba(8, 22, 21, 0.94); /* Semi-transparent background */
