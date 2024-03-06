@@ -72,7 +72,9 @@ function Account() {
       headers: { 'Content-Type': 'application/json' },
     })
     if (response.ok) {
-      alert(response);
+      alert(response.status);
+    } else {
+      alert(response.status);
     }
 
     // Handle sign up form submission
