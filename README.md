@@ -1,132 +1,39 @@
-# Auction Site
+# Clove Art House
+    At Clove Art House, our mission goes beyond transactions. We're passionate about spreading artists' names far and wide. We amplify their voices helping to create a world where every artist's voice is heard and cherished. Join us in our journey to celebrate art, creativity, and the human spirit, knowing that every purchase supports our partnered nonprofits, furthering our commitment to the artistic community and important causes.
+
+![Art Auction Site](./client/public/assets/img/final.png)
 
 ## Table of Contents
-1. Project Description
-2. User Story
-3. Acceptance Critera
-4. Programs Used
-5. Installation
-6. Usage
-7. Collaborators
+1. [Features](#features)
+2. [Installation & Usage](#installation-and-usage)
+3. [Collaborators](#collaborators)
 
-## 1. Project Description
-This app is a website designed for a user to create an account and create biddings or bid on art. Its meant to be a non profit organization with the intent to spread artists names out into the wider public.
 
-## 2 User Story
-- As a person who is looking for art
-- I Want to be able to bid on an art piece
-- So i can recieve my art
+## Features
 
-- As an artist
-- I want to be able to put up a piece of art for auction
-- So i can make money and spread my name wide
+1. **Auction System**: Allows users to place bids on items displayed on the website.
 
-## 3. Acceptance Criteria
-- Given I am looking for art
-- When i log into the wbsite
-- I can look over art pieces to bet on
-- When i click on an art piece I am given details about the piece
-- If i am the user who posted the bidding I should be able to update or delete said post
+2. **Real-time Updates**: Utilizes Socket.IO for real-time communication, ensuring that bid prices are updated instantly for all users without needing to refresh the page.
 
-## 4. Programs Used
-1. React
-2. Web Sockets
+3. **User Authentication**: Tracks user login status (`isLoggedIn` state) and prompts users to log in before they can place a bid.
 
-## 5. Instalation
+4. **Product Display**: Displays product details including title, description, and image.
 
-As a user you must update the .env file with your
-NAME_DB
-USER_DB
-PASSWORD_DB
+5. **Responsive Design**: Styled using CSS, indicating attention to user interface design and possibly responsive layout for different screen sizes.
 
-npm install all dependencies
+6. **Error Handling**: Basic error handling included to ensure bid amounts are valid and greater than the current price.
 
-npm run start
+7. **Scalability**: Utilizes Socket.IO for real-time updates, potentially making the website scalable to support a large number of concurrent users participating in auctions simultaneously.
 
-it should run on
+8. **Virtual DOM**: Efficient rendering with React.
 
-localhost:3001
 
-```
-Deployed Website Link:
-```
+### Installation & Usage
+This is a web based application and is accesiable at the link below. 
 
-Insert Picture here
+1. Access the deployed website at [https://art-auction-ea7c69280ad5.herokuapp.com/](https://art-auction-ea7c69280ad5.herokuapp.com/).
 
-## 6. Usage
-
-1. Create an account with a username and password of your choice on the sign-up page.
-2. Look over all active biddings.
-3. Read over our mission statement.
-4. Update or delete any postings for your specific bids.
-5. Add bids to cart. 
-6. See information on each bidding.
-
-## 7. Collaborators:
-
-1. Juniper McGill
-2. Chad Andari
-3. Joseph Vanzandt
-
-## 8. Credits
-
-1. x
-2. x
-3. https://github.com/JosephVz
-
-This project was bootstrapped with Create React App.
-
-Available Scripts
-In the project directory, you can run:
-
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
-
-The page will reload when you make changes.
-You may also see any lint errors in the console.
-
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about deployment for more information.
-
-npm run eject
-Note: this is a one-way operation. Once you eject, you can't go back!
-
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-Learn More
-You can learn more in the Create React App documentation.
-
-To learn React, check out the React documentation.
-
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-npm run build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Collaborators:
+- [Juniper Wren McGill](https://github.com/JuniperWrenMcGill): Full Stack
+- [Chad Andari](https://github.com/CodeClass0): SocketIO, Contributed to backend infrastucture 
+- [Joseph Vanzandt](https://github.com/JosephVz): Database, Contributed to file infrastructure 
