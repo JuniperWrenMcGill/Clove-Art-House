@@ -1,5 +1,5 @@
 # Clove Art House
-    At Clove Art House, our mission goes beyond transactions. We're passionate about spreading artists' names far and wide. We amplify their voices helping to create a world where every artist's voice is heard and cherished. Join us in our journey to celebrate art, creativity, and the human spirit, knowing that every purchase supports our partnered nonprofits, furthering our commitment to the artistic community and important causes.
+ At Clove Art House, our mission goes beyond transactions. We're passionate about spreading artists' names far and wide. We amplify their voices helping to create a world where every artist's voice is heard and cherished. Join us in our journey to celebrate art, creativity, and the human spirit, knowing that every purchase supports our partnered nonprofits, furthering our commitment to the artistic community and important causes.
 
 ![Art Auction Site](./client/public/assets/img/final.png)
 
